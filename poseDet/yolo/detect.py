@@ -191,7 +191,7 @@ if __name__ == '__main__':
     parser.add_argument('--kpt-label', action='store_true', help='use keypoint labels')
     opt = parser.parse_args()
     print(opt)
-    #check_requirements(exclude=('tensorboard', 'pycocotools', 'thop'))
+#    check_requirements(exclude=('tensorboard', 'pycocotools', 'thop'))
 
     with torch.no_grad():
         if opt.update:  # update all models (to fix SourceChangeWarning)
